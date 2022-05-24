@@ -4,10 +4,10 @@ _TNN7_ a suite of nine highly optimized custom macros developed using a predicti
 
 Layout of 82x2 TNN column for UCR _TwoLeadECG_ application using ASAP7 standard cells
 
-![alt text](https://github.com/prabsy96/TNN7/blob/main/layout_img/std_2lead_layout.PNG?raw=true width="100" height="100")
+![alt text](https://github.com/prabsy96/TNN7/blob/main/layout_img/std_2lead_layout.PNG?raw=true)
 
 Layout of 82x2 TNN column for UCR _TwoLeadECG_ application using TNN7 custom macros
 
-![alt text](https://github.com/prabsy96/TNN7/blob/main/layout_img/cus_2lead_layout.PNG?raw=true width="100" height="100")
+![alt text](https://github.com/prabsy96/TNN7/blob/main/layout_img/cus_2lead_layout.PNG?raw=true)
 
 
