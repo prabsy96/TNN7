@@ -1,0 +1,184 @@
+VERSION 5.8 ;
+BUSBITCHARS "[]" ;
+DIVIDERCHAR "/" ;
+
+MACRO fsm_simple_macro
+  ORIGIN 0.732 0 ;
+  FOREIGN fsm_simple_macro -0.732 0 ;
+  SIZE 6.696 BY 1.08 ;
+  SYMMETRY X Y ;
+  SITE core ;
+  PIN VDD
+    DIRECTION INOUT ;
+    USE POWER ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT -0.732 1.044 5.964 1.116 ;
+    END
+  END VDD
+  PIN VSS
+    DIRECTION INOUT ;
+    USE GROUND ;
+    SHAPE ABUTMENT ;
+    PORT
+      LAYER M1 ;
+        RECT -0.732 -0.036 5.964 0.036 ;
+    END
+  END VSS
+  PIN IN
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 2.796 0.28 2.868 0.944 ;
+    END
+  END IN
+  PIN NEXT_STATE_0
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT -0.012 0.108 0.404 0.18 ;
+        RECT -0.012 0.9 0.208 0.972 ;
+        RECT -0.012 0.108 0.06 0.972 ;
+    END
+  END NEXT_STATE_0
+  PIN NEXT_STATE_1
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 4.956 0.756 5.136 0.828 ;
+        RECT 4.956 0.252 5.136 0.324 ;
+        RECT 4.956 0.252 5.028 0.828 ;
+    END
+  END NEXT_STATE_1
+  PIN NEXT_STATE_2
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT 1.372 0.9 2.22 0.972 ;
+        RECT 2.148 0.108 2.22 0.972 ;
+        RECT 2.04 0.108 2.22 0.18 ;
+    END
+  END NEXT_STATE_2
+  PIN OUT
+    DIRECTION OUTPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M1 ;
+        RECT -0.356 0.9 -0.156 0.972 ;
+        RECT -0.228 0.108 -0.156 0.972 ;
+        RECT -0.356 0.108 -0.156 0.18 ;
+    END
+  END OUT
+  PIN STATE_0
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M2 ;
+        RECT 0.4 0.504 4.4 0.576 ;
+      LAYER M1 ;
+        RECT 4.232 0.756 4.38 0.828 ;
+        RECT 4.308 0.252 4.38 0.828 ;
+        RECT 4.232 0.252 4.38 0.324 ;
+        RECT 3.228 0.484 3.3 0.596 ;
+        RECT 0.42 0.384 0.492 0.72 ;
+      LAYER V1 ;
+        RECT 0.42 0.504 0.492 0.576 ;
+        RECT 3.228 0.504 3.3 0.576 ;
+        RECT 4.308 0.504 4.38 0.576 ;
+    END
+  END STATE_0
+  PIN STATE_1
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M2 ;
+        RECT 3.204 0.152 3.968 0.224 ;
+      LAYER M1 ;
+        RECT 3.876 0.504 4.112 0.576 ;
+        RECT 3.876 0.108 4.024 0.18 ;
+        RECT 3.876 0.108 3.948 0.8 ;
+        RECT 3.444 0.312 3.516 0.576 ;
+        RECT 3.296 0.312 3.516 0.384 ;
+        RECT 3.296 0.152 3.368 0.384 ;
+        RECT 3.204 0.152 3.368 0.224 ;
+      LAYER V1 ;
+        RECT 3.224 0.152 3.296 0.224 ;
+        RECT 3.876 0.152 3.948 0.224 ;
+    END
+  END STATE_1
+  PIN STATE_2
+    DIRECTION INPUT ;
+    USE SIGNAL ;
+    PORT
+      LAYER M2 ;
+        RECT 0.848 0.852 3.104 0.924 ;
+        RECT 0.852 0.708 0.924 0.924 ;
+      LAYER M1 ;
+        RECT 3.012 0.28 3.084 0.944 ;
+        RECT 0.852 0.28 0.924 0.8 ;
+      LAYER V1 ;
+        RECT 0.852 0.708 0.924 0.78 ;
+        RECT 3.012 0.852 3.084 0.924 ;
+    END
+  END STATE_2
+  OBS
+    LAYER M1 ;
+      RECT 5.82 0.136 5.892 0.944 ;
+      RECT 5.628 0.504 5.892 0.576 ;
+      RECT 5.244 0.9 5.588 0.972 ;
+      RECT 5.244 0.108 5.316 0.972 ;
+      RECT 5.152 0.504 5.316 0.576 ;
+      RECT 5.612 0.108 5.684 0.344 ;
+      RECT 5.244 0.108 5.684 0.18 ;
+      RECT 4.636 0.756 4.812 0.828 ;
+      RECT 4.74 0.252 4.812 0.828 ;
+      RECT 4.636 0.252 4.812 0.324 ;
+      RECT 3.964 0.9 4.536 0.972 ;
+      RECT 4.464 0.108 4.536 0.972 ;
+      RECT 4.464 0.504 4.608 0.576 ;
+      RECT 4.18 0.108 4.536 0.18 ;
+      RECT 3.316 0.9 3.732 0.972 ;
+      RECT 3.66 0.108 3.732 0.972 ;
+      RECT 3.512 0.108 3.732 0.18 ;
+      RECT 2.364 0.9 2.564 0.972 ;
+      RECT 2.364 0.108 2.436 0.972 ;
+      RECT 2.364 0.108 2.996 0.18 ;
+      RECT 0.724 0.9 1.068 0.972 ;
+      RECT 0.996 0.3 1.068 0.972 ;
+      RECT 0.996 0.756 2.004 0.828 ;
+      RECT 1.932 0.484 2.004 0.828 ;
+      RECT 0.636 0.108 0.708 0.8 ;
+      RECT 1.716 0.252 1.788 0.656 ;
+      RECT 1.176 0.252 1.788 0.324 ;
+      RECT 1.176 0.108 1.248 0.324 ;
+      RECT 0.636 0.108 1.248 0.18 ;
+      RECT 5.388 0.28 5.46 0.8 ;
+      RECT 2.58 0.28 2.652 0.8 ;
+      RECT 1.392 0.108 1.896 0.18 ;
+      RECT 0.204 0.316 0.276 0.72 ;
+      RECT -0.444 0.296 -0.372 0.672 ;
+    LAYER M2 ;
+      RECT 0.204 0.128 0.276 0.408 ;
+      RECT -0.444 0.128 -0.372 0.388 ;
+      RECT -0.444 0.128 2.456 0.2 ;
+      RECT 0.616 0.324 5.912 0.396 ;
+      RECT 2.56 0.68 5.48 0.752 ;
+    LAYER V1 ;
+      RECT 5.82 0.324 5.892 0.396 ;
+      RECT 5.388 0.68 5.46 0.752 ;
+      RECT 4.74 0.68 4.812 0.752 ;
+      RECT 3.66 0.324 3.732 0.396 ;
+      RECT 2.58 0.68 2.652 0.752 ;
+      RECT 2.364 0.128 2.436 0.2 ;
+      RECT 0.636 0.324 0.708 0.396 ;
+      RECT 0.204 0.336 0.276 0.408 ;
+      RECT -0.444 0.316 -0.372 0.388 ;
+  END
+END fsm_simple_macro
+
+END LIBRARY
