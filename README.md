@@ -1,1 +1,1 @@
-# TNN_ASAP7_Custom_Macros-
+# TNN7: A Custom Macro Suite for Implementing Highly Optimized Designs of Neuromorphic TNNs
